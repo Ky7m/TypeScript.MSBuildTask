@@ -5,7 +5,7 @@ param($installPath, $toolsPath, $package, $project)
 if ($project -eq $null) { Exit }
 
 # Delete bogus content file that serves to start this script
-$project.ProjectItems | Where { $_.Name -eq "TypeScript.MSBuild.readme.txt" } | ForEach-Object { $_.Delete() }
+$project.ProjectItems | Where { $_.Name -eq "TypeScript.MSBuildTask.readme.txt" } | ForEach-Object { $_.Delete() }
 
 # Save any current changes to project and update imports
 $project.Save()
