@@ -20,7 +20,6 @@
     </metadata>
     <files>
         <file src="Readme.txt" target="" />
-        <file src="content\CheckPoint.txt" target="content" />
         <file src="tools\Install.ps1" target="tools" />
         <file src="tools\Uninstall.ps1" target="tools" />
         <file src="tools\ProjectFileTransform.ps1" target="tools" />

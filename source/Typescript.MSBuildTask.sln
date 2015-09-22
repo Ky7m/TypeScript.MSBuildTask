@@ -25,17 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{9DCD8298
 		{82A7F48D-3B50-4B1E-B82E-3ADA8210C358} = {82A7F48D-3B50-4B1E-B82E-3ADA8210C358}
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{3A43ACAA-D9EB-4FCE-AAD5-C9E4340B534B}"
-	ProjectSection(SolutionItems) = preProject
-		TypeScript.MSBuildTask\content\CheckPoint.txt = TypeScript.MSBuildTask\content\CheckPoint.txt
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9DCD8298-B71C-4B76-A527-D585EE6C4100} = {6FBD1A81-C348-4467-9F76-1EB8A7B12502}
-		{3A43ACAA-D9EB-4FCE-AAD5-C9E4340B534B} = {6FBD1A81-C348-4467-9F76-1EB8A7B12502}
 	EndGlobalSection
 EndGlobal
