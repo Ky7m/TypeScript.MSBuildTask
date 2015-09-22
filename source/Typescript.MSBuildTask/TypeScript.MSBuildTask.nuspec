@@ -2,7 +2,7 @@
 <package >
     <metadata>
         <id>TypeScript.MSBuildTask</id>
-        <version>1.6.1</version>
+        <version>1.6.2</version>
         <authors>Marcel Veldhuizen, Igor Fesenko</authors>
         <owners>Marcel Veldhuizen, Igor Fesenko</owners>
         <projectUrl>https://github.com/Ky7m/TypeScript.MSBuildTask</projectUrl>
