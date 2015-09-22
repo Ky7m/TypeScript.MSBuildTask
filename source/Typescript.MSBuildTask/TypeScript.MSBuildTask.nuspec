@@ -6,7 +6,7 @@
         <authors>Marcel Veldhuizen, Igor Fesenko</authors>
         <owners>Marcel Veldhuizen, Igor Fesenko</owners>
         <projectUrl>https://github.com/Ky7m/TypeScript.MSBuildTask</projectUrl>
-        <iconUrl>http://thorarin.net/external/nuget/TypeScript.MSBuild.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/Ky7m/TypeScript.MSBuildTask/master/TypeScript.MSBuildTask.png</iconUrl>
         <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>
