@@ -13,7 +13,7 @@
   <EnumProperty Name="TypeScriptTarget" DisplayName="Version ECMAScript" Category="TypeScriptBuild" Description="Version ECMAScript à utiliser pour le code JavaScript généré">
     <EnumValue Name="ES3" DisplayName="ECMAScript 3"/>
     <EnumValue Name="ES5" DisplayName="ECMAScript 5"/>
-    <EnumValue Name="ES6" DisplayName="ECMAScript 6"/>
+    <EnumValue Name="ES6" DisplayName="ECMAScript 6"/>
   </EnumProperty>
 
   <EnumProperty Name="TypeScriptCompileOnSaveEnabled" DisplayName="Compiler lors de l'enregistrement" Category="TypeScriptBuild" Description="Recompiler les sources lors de l'enregistrement">
@@ -30,6 +30,8 @@
     <EnumValue Name="none" DisplayName="Aucun"/>
     <EnumValue Name="amd" DisplayName="AMD"/>
     <EnumValue Name="commonjs" DisplayName="CommonJS"/>
+    <EnumValue Name="umd" DisplayName="UMD"/>
+    <EnumValue Name="system" DisplayName="Système"/>
   </EnumProperty>
 
   <EnumProperty Name="TypeScriptRemoveComments" DisplayName="Conserver les commentaires dans la sortie JavaScript" Category="TypeScriptBuild" Description="Publier des commentaires dans la sortie">
@@ -55,4 +57,14 @@
 
   <StringProperty Name="TypeScriptSourceRoot" DisplayName="Spécifier le répertoire racine des fichiers TypeScript" Category="TypeScriptBuild" Description="Publie les mappages de sources pour que les sources se trouvent à la racine pendant le débogage"/>
 
+  <EnumProperty Name="TypeScriptNoEmitOnError" DisplayName="Émettre lors d'une erreur" Category="TypeScriptBuild" Description="Émettre des sorties si des erreurs sont signalées">
+    <EnumValue Name="true" DisplayName="Non"/>
+    <EnumValue Name="false" DisplayName="Oui"/>
+  </EnumProperty>
+
+  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Compilation mode for .tsx files" Category="TypeScriptBuild" Description="Specify JSX code compilation mode for .tsx files, this doesn't affect .ts files">
+    <EnumValue Name="none" DisplayName="Aucun"/>
+    <EnumValue Name="preserve" DisplayName="Preserve JSX elements"/>
+    <EnumValue Name="react" DisplayName="Emit React call for JSX elements"/>
+  </EnumProperty>
 </Rule>

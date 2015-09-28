@@ -30,6 +30,8 @@
     <EnumValue Name="none" DisplayName="없음"/>
     <EnumValue Name="amd" DisplayName="AMD"/>
     <EnumValue Name="commonjs" DisplayName="CommonJS"/>
+    <EnumValue Name="umd" DisplayName="UMD"/>
+    <EnumValue Name="system" DisplayName="시스템"/>
   </EnumProperty>
 
   <EnumProperty Name="TypeScriptRemoveComments" DisplayName="JavaScript 출력에 주석 유지" Category="TypeScriptBuild" Description="출력에 주석 내보내기">
@@ -55,4 +57,14 @@
 
   <StringProperty Name="TypeScriptSourceRoot" DisplayName="TypeScript 파일의 루트 디렉터리 지정" Category="TypeScriptBuild" Description="소스를 디버깅하는 동안 해당 sourcemap을 내보내면 소스 루트에 배치됩니다."/>
 
+  <EnumProperty Name="TypeScriptNoEmitOnError" DisplayName="오류 시 내보내기" Category="TypeScriptBuild" Description="오류가 보고되면 출력을 내보냅니다.">
+    <EnumValue Name="true" DisplayName="아니요"/>
+    <EnumValue Name="false" DisplayName="예"/>
+  </EnumProperty>
+
+  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Compilation mode for .tsx files" Category="TypeScriptBuild" Description="Specify JSX code compilation mode for .tsx files, this doesn't affect .ts files">
+    <EnumValue Name="none" DisplayName="없음"/>
+    <EnumValue Name="preserve" DisplayName="Preserve JSX elements"/>
+    <EnumValue Name="react" DisplayName="Emit React call for JSX elements"/>
+  </EnumProperty>
 </Rule>

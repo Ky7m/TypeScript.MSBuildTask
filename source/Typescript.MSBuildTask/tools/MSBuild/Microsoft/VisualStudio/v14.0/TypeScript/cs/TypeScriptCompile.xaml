@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Copyright, Microsoft Corporation, All rights reserved.-->
-<Rule Name="TypeScriptCompile" DisplayName="TypeScript file" PageTemplate="generic" Description="TypeScript file" xmlns="http://schemas.microsoft.com/build/2009/properties">
+<Rule Name="TypeScriptCompile" DisplayName="Soubor TypeScriptu" PageTemplate="generic" Description="Soubor TypeScriptu" xmlns="http://schemas.microsoft.com/build/2009/properties">
 
   <Rule.Categories>
-    <Category Name="General" DisplayName="General"/>
+    <Category Name="General" DisplayName="Obecné"/>
   </Rule.Categories>
 
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" HasConfigurationCondition="false" ItemType="TypeScriptCompile"/>
   </Rule.DataSource>
 
-  <EnumProperty Name="{}{ItemType}" DisplayName="Package Action" Category="General" F1Keyword="javascript.project.property.packageaction" Description="Specifies the action taken on this file when an app package is produced.">
-    <EnumValue Name="None" DisplayName="None"/>
-    <EnumValue Name="Content" DisplayName="Content"/>
-    <EnumValue Name="AppxManifest" DisplayName="App Manifest"/>
-    <EnumValue Name="PRIResource" DisplayName="Resource"/>
+  <EnumProperty Name="{}{ItemType}" DisplayName="Akce balíčku" Category="General" F1Keyword="javascript.project.property.packageaction" Description="Určuje akci pro tento soubor, když je vytvořený balíček aplikace.">
+    <EnumValue Name="None" DisplayName="Žádná"/>
+    <EnumValue Name="Content" DisplayName="Obsah"/>
+    <EnumValue Name="AppxManifest" DisplayName="Manifest aplikace"/>
+    <EnumValue Name="PRIResource" DisplayName="Prostředek"/>
     <EnumValue Name="TypeScriptCompile" DisplayName="TypeScriptCompile"/>
 
     <EnumProperty.DataSource>
@@ -22,19 +22,19 @@
     </EnumProperty.DataSource>
   </EnumProperty>
 
-  <EnumProperty Name="CopyToOutputDirectory" DisplayName="Copy to Output Directory" Category="General" F1Keyword="javascript.project.property.copytooutputdirectory" Description="Specifies if the file should be copied to the output folder.">
-    <EnumValue Name="Never" DisplayName="Do not copy"/>
-    <EnumValue Name="Always" DisplayName="Copy always"/>
-    <EnumValue Name="PreserveNewest" DisplayName="Copy if newer"/>
+  <EnumProperty Name="CopyToOutputDirectory" DisplayName="Kopírovat do výstupního adresáře" Category="General" F1Keyword="javascript.project.property.copytooutputdirectory" Description="Určuje, jestli se má soubor zkopírovat do výstupní složky.">
+    <EnumValue Name="Never" DisplayName="Nekopírovat"/>
+    <EnumValue Name="Always" DisplayName="Vždycky kopírovat"/>
+    <EnumValue Name="PreserveNewest" DisplayName="Kopírovat, pokud je novější"/>
   </EnumProperty>
 
-  <StringProperty Name="Identity" DisplayName="File Name" ReadOnly="true" Category="General" F1Keyword="javascript.project.property.filename" Description="Name of the file or folder.">
+  <StringProperty Name="Identity" DisplayName="Název souboru" ReadOnly="true" Category="General" F1Keyword="javascript.project.property.filename" Description="Název souboru nebo složky">
     <StringProperty.DataSource>
       <DataSource Persistence="Intrinsic" ItemType="TypeScriptCompile" PersistedName="Identity"/>
     </StringProperty.DataSource>
   </StringProperty>
 
-  <StringProperty Name="FullPath" DisplayName="Full Path" ReadOnly="true" Category="General" F1Keyword="javascript.project.property.fullpath" Description="Location of the file.">
+  <StringProperty Name="FullPath" DisplayName="Úplná cesta" ReadOnly="true" Category="General" F1Keyword="javascript.project.property.fullpath" Description="Umístění souboru">
     <StringProperty.DataSource>
       <DataSource Persistence="Intrinsic" ItemType="TypeScriptCompile" PersistedName="FullPath"/>
     </StringProperty.DataSource>

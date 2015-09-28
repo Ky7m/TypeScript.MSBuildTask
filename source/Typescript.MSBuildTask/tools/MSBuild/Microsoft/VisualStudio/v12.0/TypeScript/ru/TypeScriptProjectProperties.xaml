@@ -30,6 +30,8 @@
     <EnumValue Name="none" DisplayName="Нет"/>
     <EnumValue Name="amd" DisplayName="AMD"/>
     <EnumValue Name="commonjs" DisplayName="CommonJS"/>
+    <EnumValue Name="umd" DisplayName="UMD"/>
+    <EnumValue Name="system" DisplayName="Система"/>
   </EnumProperty>
 
   <EnumProperty Name="TypeScriptRemoveComments" DisplayName="Сохранять комментарии в выходных данных JavaScript" Category="TypeScriptBuild" Description="Создавать комментарии в выходных данных">
@@ -55,4 +57,14 @@
 
   <StringProperty Name="TypeScriptSourceRoot" DisplayName="Укажите корневой каталог файлов TypeScript" Category="TypeScriptBuild" Description="Создает сопоставления источника так, что при отладке исходные файлы будут находиться в корневом каталоге исходных файлов"/>
 
+  <EnumProperty Name="TypeScriptNoEmitOnError" DisplayName="Выводить при ошибке" Category="TypeScriptBuild" Description="Выводить выходные элементы, если есть сообщения об ошибках">
+    <EnumValue Name="true" DisplayName="Нет"/>
+    <EnumValue Name="false" DisplayName="Да"/>
+  </EnumProperty>
+
+  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Compilation mode for .tsx files" Category="TypeScriptBuild" Description="Specify JSX code compilation mode for .tsx files, this doesn't affect .ts files">
+    <EnumValue Name="none" DisplayName="Нет"/>
+    <EnumValue Name="preserve" DisplayName="Preserve JSX elements"/>
+    <EnumValue Name="react" DisplayName="Emit React call for JSX elements"/>
+  </EnumProperty>
 </Rule>
