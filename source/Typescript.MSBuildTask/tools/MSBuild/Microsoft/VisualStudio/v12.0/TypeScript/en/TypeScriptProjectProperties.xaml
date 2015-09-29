@@ -51,6 +51,8 @@
     <EnumValue Name="none" DisplayName="None" />
     <EnumValue Name="amd" DisplayName="AMD" />
     <EnumValue Name="commonjs" DisplayName="CommonJS" />
+    <EnumValue Name="umd" DisplayName="UMD" />
+    <EnumValue Name="system" DisplayName="System" />
   </EnumProperty>
 
   <EnumProperty
@@ -104,4 +106,22 @@
     Category="TypeScriptBuild"
     Description="Emits the sourcemaps such that sources while debugging will be located in the source root" />
 
+  <EnumProperty
+    Name="TypeScriptNoEmitOnError"
+    DisplayName="Emit on error"
+    Category="TypeScriptBuild"
+    Description="Emit outputs if any errors were reported">
+    <EnumValue Name="true" DisplayName="No" />
+    <EnumValue Name="false" DisplayName="Yes" />
+  </EnumProperty>
+
+  <EnumProperty
+    Name="TypeScriptJSXEmit"
+    DisplayName="Compilation mode for .tsx files"
+    Category="TypeScriptBuild"
+    Description="Specify JSX code compilation mode for .tsx files, this doesn't affect .ts files">
+    <EnumValue Name="none" DisplayName="None" />
+    <EnumValue Name="preserve" DisplayName="Preserve JSX elements" />
+    <EnumValue Name="react" DisplayName="Emit React call for JSX elements" />
+  </EnumProperty>
 </Rule>

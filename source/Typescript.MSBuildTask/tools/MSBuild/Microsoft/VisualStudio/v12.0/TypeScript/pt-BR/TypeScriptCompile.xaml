@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Copyright, Microsoft Corporation, All rights reserved.-->
-<Rule Name="TypeScriptCompile" DisplayName="TypeScript file" PageTemplate="generic" Description="TypeScript file" xmlns="http://schemas.microsoft.com/build/2009/properties">
+<Rule Name="TypeScriptCompile" DisplayName="Arquivo TypeScript" PageTemplate="generic" Description="Arquivo TypeScript" xmlns="http://schemas.microsoft.com/build/2009/properties">
 
   <Rule.Categories>
-    <Category Name="General" DisplayName="General"/>
+    <Category Name="General" DisplayName="Geral"/>
   </Rule.Categories>
 
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" HasConfigurationCondition="false" ItemType="TypeScriptCompile"/>
   </Rule.DataSource>
 
-  <EnumProperty Name="{}{ItemType}" DisplayName="Package Action" Category="General" F1Keyword="javascript.project.property.packageaction" Description="Specifies the action taken on this file when an app package is produced.">
-    <EnumValue Name="None" DisplayName="None"/>
-    <EnumValue Name="Content" DisplayName="Content"/>
-    <EnumValue Name="AppxManifest" DisplayName="App Manifest"/>
-    <EnumValue Name="PRIResource" DisplayName="Resource"/>
+  <EnumProperty Name="{}{ItemType}" DisplayName="Ação do Pacote" Category="General" F1Keyword="javascript.project.property.packageaction" Description="Especifica a ação executada neste arquivo quando um pacote do aplicativo é produzido.">
+    <EnumValue Name="None" DisplayName="Nenhum"/>
+    <EnumValue Name="Content" DisplayName="Conteúdo"/>
+    <EnumValue Name="AppxManifest" DisplayName="Manifesto do Aplicativo"/>
+    <EnumValue Name="PRIResource" DisplayName="Recurso"/>
     <EnumValue Name="TypeScriptCompile" DisplayName="TypeScriptCompile"/>
 
     <EnumProperty.DataSource>
@@ -22,19 +22,19 @@
     </EnumProperty.DataSource>
   </EnumProperty>
 
-  <EnumProperty Name="CopyToOutputDirectory" DisplayName="Copy to Output Directory" Category="General" F1Keyword="javascript.project.property.copytooutputdirectory" Description="Specifies if the file should be copied to the output folder.">
-    <EnumValue Name="Never" DisplayName="Do not copy"/>
-    <EnumValue Name="Always" DisplayName="Copy always"/>
-    <EnumValue Name="PreserveNewest" DisplayName="Copy if newer"/>
+  <EnumProperty Name="CopyToOutputDirectory" DisplayName="Copiar para diretório de saída" Category="General" F1Keyword="javascript.project.property.copytooutputdirectory" Description="Especifica se o arquivo deve ser copiado para a pasta de saída.">
+    <EnumValue Name="Never" DisplayName="Não copiar"/>
+    <EnumValue Name="Always" DisplayName="Sempre copiar"/>
+    <EnumValue Name="PreserveNewest" DisplayName="Copiar se for mais novo"/>
   </EnumProperty>
 
-  <StringProperty Name="Identity" DisplayName="File Name" ReadOnly="true" Category="General" F1Keyword="javascript.project.property.filename" Description="Name of the file or folder.">
+  <StringProperty Name="Identity" DisplayName="Nome do Arquivo" ReadOnly="true" Category="General" F1Keyword="javascript.project.property.filename" Description="Nome do arquivo ou pasta.">
     <StringProperty.DataSource>
       <DataSource Persistence="Intrinsic" ItemType="TypeScriptCompile" PersistedName="Identity"/>
     </StringProperty.DataSource>
   </StringProperty>
 
-  <StringProperty Name="FullPath" DisplayName="Full Path" ReadOnly="true" Category="General" F1Keyword="javascript.project.property.fullpath" Description="Location of the file.">
+  <StringProperty Name="FullPath" DisplayName="Caminho Completo" ReadOnly="true" Category="General" F1Keyword="javascript.project.property.fullpath" Description="Local do arquivo.">
     <StringProperty.DataSource>
       <DataSource Persistence="Intrinsic" ItemType="TypeScriptCompile" PersistedName="FullPath"/>
     </StringProperty.DataSource>

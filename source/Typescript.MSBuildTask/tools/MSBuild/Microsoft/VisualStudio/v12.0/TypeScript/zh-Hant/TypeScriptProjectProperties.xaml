@@ -30,6 +30,8 @@
     <EnumValue Name="none" DisplayName="無"/>
     <EnumValue Name="amd" DisplayName="AMD"/>
     <EnumValue Name="commonjs" DisplayName="CommonJS"/>
+    <EnumValue Name="umd" DisplayName="UMD"/>
+    <EnumValue Name="system" DisplayName="系統"/>
   </EnumProperty>
 
   <EnumProperty Name="TypeScriptRemoveComments" DisplayName="在 JavaScript 輸出中保留註解" Category="TypeScriptBuild" Description="將註解發至輸出">
@@ -55,4 +57,14 @@
 
   <StringProperty Name="TypeScriptSourceRoot" DisplayName="指定 TypeScript 檔案的根目錄" Category="TypeScriptBuild" Description="發出來源對應，以便偵錯時，可以在來源根目錄中找到來源。"/>
 
+  <EnumProperty Name="TypeScriptNoEmitOnError" DisplayName="錯誤時發出" Category="TypeScriptBuild" Description="如有回報任何錯誤，即發出輸出。">
+    <EnumValue Name="true" DisplayName="否"/>
+    <EnumValue Name="false" DisplayName="是"/>
+  </EnumProperty>
+
+  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Compilation mode for .tsx files" Category="TypeScriptBuild" Description="Specify JSX code compilation mode for .tsx files, this doesn't affect .ts files">
+    <EnumValue Name="none" DisplayName="無"/>
+    <EnumValue Name="preserve" DisplayName="Preserve JSX elements"/>
+    <EnumValue Name="react" DisplayName="Emit React call for JSX elements"/>
+  </EnumProperty>
 </Rule>

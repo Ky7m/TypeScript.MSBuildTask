@@ -22,7 +22,7 @@
     </EnumProperty.DataSource>
   </EnumProperty>
 
-  <EnumProperty Name="CopyToOutputDirectory" DisplayName="Копировать в выходной каталог" Category="General" F1Keyword="javascript.project.property.copytooutputdirectory" Description="Указывает, нужно ли копировать файл в выходную папку.">
+  <EnumProperty Name="CopyToOutputDirectory" DisplayName="Копировать в выходной каталог" Category="General" F1Keyword="javascript.project.property.copytooutputdirectory" Description="Указывает, нужно ли копировать файл в папку выходных данных.">
     <EnumValue Name="Never" DisplayName="Не копировать"/>
     <EnumValue Name="Always" DisplayName="Всегда копировать"/>
     <EnumValue Name="PreserveNewest" DisplayName="Копировать более позднюю версию"/>

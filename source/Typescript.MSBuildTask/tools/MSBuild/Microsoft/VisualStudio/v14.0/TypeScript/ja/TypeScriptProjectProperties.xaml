@@ -30,6 +30,8 @@
     <EnumValue Name="none" DisplayName="なし"/>
     <EnumValue Name="amd" DisplayName="AMD"/>
     <EnumValue Name="commonjs" DisplayName="CommonJS"/>
+    <EnumValue Name="umd" DisplayName="UMD"/>
+    <EnumValue Name="system" DisplayName="システム"/>
   </EnumProperty>
 
   <EnumProperty Name="TypeScriptRemoveComments" DisplayName="JavaScript 出力にコメントを残す" Category="TypeScriptBuild" Description="コメントを出力する">
@@ -55,4 +57,14 @@
 
   <StringProperty Name="TypeScriptSourceRoot" DisplayName="TypeScript ファイルのルート ディレクトリを指定する" Category="TypeScriptBuild" Description="デバッグ中のソースがソース ルートに配置されるようにソースマップを出力する"/>
 
+  <EnumProperty Name="TypeScriptNoEmitOnError" DisplayName="エラー時に発行" Category="TypeScriptBuild" Description="エラーが報告された場合は常に出力を発行します">
+    <EnumValue Name="true" DisplayName="いいえ"/>
+    <EnumValue Name="false" DisplayName="はい"/>
+  </EnumProperty>
+
+  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Compilation mode for .tsx files" Category="TypeScriptBuild" Description="Specify JSX code compilation mode for .tsx files, this doesn't affect .ts files">
+    <EnumValue Name="none" DisplayName="なし"/>
+    <EnumValue Name="preserve" DisplayName="Preserve JSX elements"/>
+    <EnumValue Name="react" DisplayName="Emit React call for JSX elements"/>
+  </EnumProperty>
 </Rule>
