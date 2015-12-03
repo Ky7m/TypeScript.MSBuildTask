@@ -1,6 +1,6 @@
 ﻿** USAGE NOTES **
 
-You should install the TypeScript 1.6 for Visual Studio extension on your development system prior
+You should install the TypeScript 1.7 for Visual Studio extension on your development system prior
 to installing this package. You should also let Visual Studio make initial updates to the project
 file by adding at least one .ts file to the project.
 When the installation finishes, you should be prompted to reload the project.
