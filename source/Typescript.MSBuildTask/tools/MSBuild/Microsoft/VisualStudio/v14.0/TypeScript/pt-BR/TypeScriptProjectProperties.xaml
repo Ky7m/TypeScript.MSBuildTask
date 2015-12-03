@@ -57,14 +57,14 @@
 
   <StringProperty Name="TypeScriptSourceRoot" DisplayName="Especificar o diretório raiz dos arquivos TypeScript" Category="TypeScriptBuild" Description="Emite o sourcemaps de maneira que as origens se encontrem na raiz de origem durante a depuração"/>
 
-  <EnumProperty Name="TypeScriptNoEmitOnError" DisplayName="Emitir quando houver erro" Category="TypeScriptBuild" Description="Emita saídas se erros forem relatados">
+  <EnumProperty Name="TypeScriptNoEmitOnError" DisplayName="Emitir quando houver erro" Category="TypeScriptBuild" Description="Emita saídas se houver relato de erros">
     <EnumValue Name="true" DisplayName="Não"/>
     <EnumValue Name="false" DisplayName="Sim"/>
   </EnumProperty>
 
-  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Compilation mode for .tsx files" Category="TypeScriptBuild" Description="Specify JSX code compilation mode for .tsx files, this doesn't affect .ts files">
+  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Modo de compilação para arquivos .tsx" Category="TypeScriptBuild" Description="Especificar o modo de compilação de código JSX para arquivos .tsx; isso não afeta arquivos .ts">
     <EnumValue Name="none" DisplayName="Nenhum"/>
-    <EnumValue Name="preserve" DisplayName="Preserve JSX elements"/>
-    <EnumValue Name="react" DisplayName="Emit React call for JSX elements"/>
+    <EnumValue Name="preserve" DisplayName="Preservar elementos JSX"/>
+    <EnumValue Name="react" DisplayName="Emitir chamada de Reação para elementos JSX"/>
   </EnumProperty>
 </Rule>

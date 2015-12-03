@@ -62,9 +62,9 @@
     <EnumValue Name="false" DisplayName="Oui"/>
   </EnumProperty>
 
-  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Compilation mode for .tsx files" Category="TypeScriptBuild" Description="Specify JSX code compilation mode for .tsx files, this doesn't affect .ts files">
+  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Mode de compilation pour les fichiers .tsx" Category="TypeScriptBuild" Description="Spécifiez le mode de compilation du code JSX pour les fichiers .tsx. Ceci n'affecte pas les fichiers .ts">
     <EnumValue Name="none" DisplayName="Aucun"/>
-    <EnumValue Name="preserve" DisplayName="Preserve JSX elements"/>
-    <EnumValue Name="react" DisplayName="Emit React call for JSX elements"/>
+    <EnumValue Name="preserve" DisplayName="Préserver les éléments JSX"/>
+    <EnumValue Name="react" DisplayName="Émettre un appel React pour les éléments JSX"/>
   </EnumProperty>
 </Rule>

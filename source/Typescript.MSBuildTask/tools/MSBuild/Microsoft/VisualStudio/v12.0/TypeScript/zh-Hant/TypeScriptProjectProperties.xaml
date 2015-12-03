@@ -57,14 +57,14 @@
 
   <StringProperty Name="TypeScriptSourceRoot" DisplayName="指定 TypeScript 檔案的根目錄" Category="TypeScriptBuild" Description="發出來源對應，以便偵錯時，可以在來源根目錄中找到來源。"/>
 
-  <EnumProperty Name="TypeScriptNoEmitOnError" DisplayName="錯誤時發出" Category="TypeScriptBuild" Description="如有回報任何錯誤，即發出輸出。">
+  <EnumProperty Name="TypeScriptNoEmitOnError" DisplayName="錯誤時發出" Category="TypeScriptBuild" Description="如有回報任何錯誤，即發出輸出">
     <EnumValue Name="true" DisplayName="否"/>
     <EnumValue Name="false" DisplayName="是"/>
   </EnumProperty>
 
-  <EnumProperty Name="TypeScriptJSXEmit" DisplayName="Compilation mode for .tsx files" Category="TypeScriptBuild" Description="Specify JSX code compilation mode for .tsx files, this doesn't affect .ts files">
+  <EnumProperty Name="TypeScriptJSXEmit" DisplayName=".tsx 檔的編譯模式" Category="TypeScriptBuild" Description="為 .tsx 檔指定 JSX 程式碼編譯模式，這不會影響 .ts 檔">
     <EnumValue Name="none" DisplayName="無"/>
-    <EnumValue Name="preserve" DisplayName="Preserve JSX elements"/>
-    <EnumValue Name="react" DisplayName="Emit React call for JSX elements"/>
+    <EnumValue Name="preserve" DisplayName="保留 JSX 項目"/>
+    <EnumValue Name="react" DisplayName="針對 JSX 項目發出 React 呼叫"/>
   </EnumProperty>
 </Rule>
