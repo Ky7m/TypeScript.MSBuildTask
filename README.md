@@ -1,7 +1,5 @@
-# TypeScript.MSBuildTask
-Installs TypeScript tools as a NuGet package and modifies the project file to use these tools. This ensures that compilation will work even on build agents that do not have these tools installed.
-
+# TypeScript.MSBuildTask (Obsolete)
 **Important!**
-You should install the TypeScript for Visual Studio extension on your development machine, and add at least one .ts file to the project prior to installing this package.
-
-**Nuget package:** [TypeScript.MSBuildTask](https://www.nuget.org/packages/TypeScript.MSBuildTask/)
+A long-standing request from some of our users has been to provide an official TypeScript NuGet package to improve the ease of acquisition. Starting with TypeScript 1.8 beta, they will be distributing the TypeScript compiler and the MSBuild task as a NuGet package with every release! Links to the respective packages are below:
+[TypeScript compiler](https://www.nuget.org/packages/Microsoft.TypeScript.Compiler)
+[TypeScript MSBuild task](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild)
